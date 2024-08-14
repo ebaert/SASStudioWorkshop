@@ -1,0 +1,44 @@
+echo "******* CHANGE VARIABLES BELOW AS NEEDED *******"
+
+export current_namespace=gelenv
+export INGRESS_URL=https://gelenv.pdcesx02059.race.sas.com/
+export VIYA_USERNAME=geladm
+export VIYA_PASSWORD=lnxsas
+export JOB_ID_A=d42a06a4-86d4-422e-a102-aa60251e13f4
+export JOB_ID_B=657252c0-3c61-469b-aa2b-1ff40d8dc75d
+
+
+echo "******* CHANGE VARIABLES ABOVE AS NEEDED *******"
+
+echo "******* BEGIN AUTHENTICATION FOR SAS VIYA CLI *******"
+pwd && ls -la
+export SAS_CLI_PROFILE=${current_namespace}
+echo $SAS_CLI_PROFILE
+export CURL_CA_BUNDLE=~/.certs/${current_namespace}_trustedcerts.pem
+echo $CURL_CA_BUNDLE
+export SSL_CERT_FILE=~/.certs/${current_namespace}_trustedcerts.pem
+echo ${SSL_CERT_FILE}
+export REQUESTS_CA_BUNDLE=${SSL_CERT_FILE}
+echo ${REQUESTS_CA_BUNDLE}
+echo Viya URL: ${INGRESS_URL}
+clidir=/opt/sas/viya/home/bin
+echo SAS Viya CLI directory is: $clidir
+echo Create SAS Viya CLI Profile
+$clidir/sas-viya --profile ${SAS_CLI_PROFILE} profile set-endpoint ${INGRESS_URL}
+$clidir/sas-viya --profile ${SAS_CLI_PROFILE} profile toggle-color on
+$clidir/sas-viya --profile ${SAS_CLI_PROFILE} profile set-output fulljson
+echo Show profile
+$clidir/sas-viya --profile ${SAS_CLI_PROFILE} profile show
+echo Login in
+$clidir/sas-viya --profile ${SAS_CLI_PROFILE} auth login -user ${VIYA_USERNAME} -password ${VIYA_PASSWORD}
+echo Show profile after login
+echo "******* END AUTHENTICATION FOR SAS VIYA CLI *******"
+
+echo "******* BEGIN RUN DEPLOYED JOBS *******"
+echo Run Deployed Job A - start
+$clidir/sas-viya job requests execute --id ${JOB_ID_A}
+echo Run Deployed Job A - end
+echo Run Deployed Job B - start
+$clidir/sas-viya job requests execute --id ${JOB_ID_B}
+echo Run Deployed Job B - end
+echo "******* END RUN DEPLOYED JOBS *******"
