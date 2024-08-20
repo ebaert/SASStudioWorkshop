@@ -1,0 +1,24 @@
+Course: Accelerating SAS Code on the SAS Viya Platform
+Code: PGVY31
+Course Update: DEC 2023
+- Fixed small issues
+- Updated image
+
+
+The program files in this folder are designed to be run in SAS Viya using a SAS environment preconfigured with the SAS and third-party software required 
+for successful execution of the programs, as well as the required schemas, user IDs, and passwords. 
+ 
+
+** For more information about your course data, contact your SAS Instructor. **
+ 
+=============================================================================
+
+ 
+
+Copyright (c) 2023 SAS Institute Inc. Cary, N.C. USA 27513-8000 all rights reserved                                                          
+     
+THE INFORMATION CONTAINED IN THIS DISTRIBUTION IS PROVIDED BY THE INSTITUTE "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING 
+BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+A PARTICULAR PURPOSE. RECIPIENTS ACKNOWLEDGE AND AGREE THAT THE INSTITUTE SHALL NOT BE LIABLE WHATSOEVER FOR ANY DAMAGES ARISING OUT OF THEIR USE OF THIS INFORMATION.    
+
+ 
