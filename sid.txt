@@ -1,0 +1,158 @@
+[_SID_]
+Version=9.4
+Revision=9.4
+Platform_long=Microsoft Windows Server for x64
+Platform_short=wx6
+Order=9CYDHL
+License_prod=SAS
+Setnumid=70282468
+SID_schema=2
+ph_agreement=PROMPT
+SID_header=SAS 9.4
+[_Info_]
+[_FileData_]
+$_Filename=setinit.sss
+$_Path=sas\core\sasinst\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+PROC SETINIT RELEASE='9.4';
+ SITEINFO NAME='FOD JUSTITIE - ELA - EBI+DI+DMA FOR TEST - UNLTD'
+ SITE=70282468 OSNAME='WX64_SV' RECREATE WARN=31 GRACE=62
+ BIRTHDAY='22JAN2024'D  EXPIRE='30DEC2024'D PASSWORD=157502378;
+ CPU MODEL=' ' MODNUM=' ' SERIAL=' ' NAME=CPU000;
+ EXPIRE 'PRODNUM000' 'PRODNUM001' 'PRODNUM002' 'PRODNUM003'
+ 'PRODNUM007' 'PRODNUM015' 'PRODNUM045' 'PRODNUM070'
+ 'PRODNUM075' 'PRODNUM094' 'PRODNUM095' 'PRODNUM110'
+ 'PRODNUM114' 'PRODNUM119' 'PRODNUM194' 'PRODNUM208'
+ 'PRODNUM209' 'PRODNUM222' 'PRODNUM225' 'PRODNUM256'
+ 'PRODNUM268' 'PRODNUM293' 'PRODNUM377' 'PRODNUM378'
+ 'PRODNUM379' 'PRODNUM393' 'PRODNUM399' 'PRODNUM492'
+ 'PRODNUM498' 'PRODNUM500' 'PRODNUM509' 'PRODNUM535'
+ 'PRODNUM538' 'PRODNUM539' 'PRODNUM564' 'PRODNUM615'
+ 'PRODNUM616' 'PRODNUM617' 'PRODNUM618' 'PRODNUM619'
+ 'PRODNUM620' 'PRODNUM621' 'PRODNUM636' 'PRODNUM638'
+ 'PRODNUM639' 'PRODNUM640' 'PRODNUM642' 'PRODNUM646'
+ 'PRODNUM677' 'PRODNUM678' 'PRODNUM679' 'PRODNUM680'
+ 'PRODNUM681' 'PRODNUM691' 'PRODNUM692' 'PRODNUM743'
+ 'PRODNUM744' 'PRODNUM746' 'PRODNUM814' 'PRODNUM815'
+ 'PRODNUM826' 'PRODNUM827' 'PRODNUM916' 'PRODNUM919'
+ 'PRODNUM921' 'PRODNUM932' 'PRODNUM937' 'PRODNUM940'
+ 'PRODNUM965' 'PRODNUM1304' '30DEC2024'D / CPU=CPU000;
+ SAVE; RUN;
+ *DROPPED SAS Federation Server Driver for SAP;
+ *DROPPED SAS Metadata Bridges for Microsoft SQL Server;
+*PRODNUM000 = BASE Base SAS;
+*PRODNUM001 = STAT SAS/STAT;
+*PRODNUM002 = GRAPH SAS/GRAPH;
+*PRODNUM003 = ETS SAS/ETS;
+*PRODNUM007 = IML SAS/IML;
+*PRODNUM015 = CONNECT SAS/CONNECT;
+*PRODNUM045 = MDDB SAS OLAP Server;
+*PRODNUM070 = MDDBCOM MDDB Server common products;
+*PRODNUM075 = INTTECHSRV SAS Integration Technologies;
+*PRODNUM094 = SECUREBNDL SAS/Secure;
+*PRODNUM095 = SECUREWBNDL SAS/Secure Windows;
+*PRODNUM110 = SASOLAPBNDL SAS OLAP Server;
+*PRODNUM114 = DQUALITY SAS Data Quality Server;
+*PRODNUM119 = EGUIDE SAS Enterprise Guide;
+*PRODNUM1304 = JDBC SAS/ACCESS to JDBC;
+*PRODNUM194 = ORACLEBNDL SAS/ACCESS to Oracle;
+*PRODNUM208 = PCFILE SAS/ACCESS to PC Files;
+*PRODNUM209 = ODBC SAS/ACCESS to ODBC;
+*PRODNUM222 = MSSQLSERVER SAS/ACCESS to MS SQL Server;
+*PRODNUM225 = MYSQL SAS/ACCESS Interface to MySQL;
+*PRODNUM256 = DFPBASE DataFlux Platform;
+*PRODNUM268 = DXSVRVFY SAS Data Mgt Svr Enrichment;
+*PRODNUM293 = QKBWORLD Quality Knowledge Base;
+*PRODNUM377 = DXDPVQAS SAS DM Enrichment for QAS;
+*PRODNUM378 = DMSVRPRFL DataFlux Data Management Server Profile;
+*PRODNUM379 = DMSVRMNTR DataFlux Data Management Server Monitor;
+*PRODNUM393 = DMSVRQUAL DataFlux Data Management Server Quality;
+*PRODNUM399 = DXSVRSAPRFC SAS Data Mgt Svr Rmt Fnc SAP;
+*PRODNUM492 = MITICA SAS Metadata Bridges for CA;
+*PRODNUM498 = MITIINFORMAT SAS Metadata Bridges for Informatica;
+*PRODNUM500 = MITIMSEXCEL SAS Metadata Bridges for Microsoft;
+*PRODNUM509 = MITIGENERAL SAS Metadata Bridges for General Industry S;
+*PRODNUM535 = STATSTUDIO SAS/IML Studio;
+*PRODNUM538 = WKSPSRVLOCAL SAS Workspace Server for Local Access;
+*PRODNUM539 = WKSPSRVENT SAS Workspace Server for Enterprise Access;
+*PRODNUM564 = POSTGRESBNDL SAS/ACCESS to PostgreSQL;
+*PRODNUM615 = DXSVRXMLCON3 SAS Data Mgt Svr XML EANCOM;
+*PRODNUM616 = DXSVRXMLCON2 SAS Data Mgt Svr XML EDI;
+*PRODNUM617 = DXSVRXMLCON0 SAS Data Mgt Studio Flat Cu;
+*PRODNUM618 = DXSVRXMLCON5 SAS Data Mgt Svr XML HL7;
+*PRODNUM619 = DXSVRXMLCON6 SAS Data Mgt Svr XML IATA;
+*PRODNUM620 = DXSVRXMLCON1 SAS Data Mgt Svr XML X12 ATI;
+*PRODNUM621 = DMSVRXMLCON4 DataFlux Data Mgt XML Convert internals;
+*PRODNUM636 = DMSVRENT DataFlux Enterprise Data Management Svr Platfo;
+*PRODNUM638 = DMSVRENTRES DataFlux Data Management Server Entity Reso;
+*PRODNUM639 = DMSVRDIDF DataFlux Integration Data Flow;
+*PRODNUM640 = DMSVRDIPF DataFlux Integration Process Flow;
+*PRODNUM642 = DFSCRSSL DataFlux Secure Socket Layer;
+*PRODNUM646 = DFSCRAES DataFlux Secure Advanced Encryption Standard;
+*PRODNUM677 = HPS SAS High-Performance Server;
+*PRODNUM678 = AMOEXCEL SAS Add-in for Microsoft Excel;
+*PRODNUM679 = AMOOUTLOOK SAS Add-in for Microsoft Outlook;
+*PRODNUM680 = AMOPOWRPOINT SAS Add-in for Microsoft PowerPoint;
+*PRODNUM681 = AMOWORD SAS Add-in for Microsoft Word;
+*PRODNUM691 = TASEARCHIND SAS Search and Indexing Server;
+*PRODNUM692 = TAWEBCRAWLER SAS Web Crawler Server;
+*PRODNUM743 = DMSVRMNTRWEB DFDM Server Monitor and Dashboard Viewers;
+*PRODNUM744 = DMWEBSVR DataFlux Web Studio Server;
+*PRODNUM746 = DMSVRDOCEXT DFDM Server Document Extraction;
+*PRODNUM814 = BRLSTWEBAPP SAS Business Rules Manager Services;
+*PRODNUM815 = LASR SAS LASR Analytic Server;
+*PRODNUM826 = BICENTRALMID SAS Home;
+*PRODNUM827 = BISRVMID SAS Visual Analytics Services;
+*PRODNUM916 = DCMSVR SAS Decision Manager Server;
+*PRODNUM919 = LASRSTAT Adv Prgm for SAS LASR Analytic Svr;
+*PRODNUM921 = BIMVA SAS Visual Analytics Server Components;
+*PRODNUM932 = POSVR Visual Process Orchestration;
+*PRODNUM937 = DMBDNMID Business Data Network Mid-Tier;
+*PRODNUM940 = DFSERVER SAS Data Management Server Components;
+*PRODNUM965 = BRLSTCODGEN SAS Business Rules Manager Server;
+*LICENSE=SAS;
+*0082919013 9.4;
+/*TKLASR
+applylasrlic 0,999,0,0,1743570000,,70282468,4f875ee74ed937dab39d95f5
+95f3acbf
+*/
+*-site 70282468 -expire 04/02/2025 -LASR_SMPcpus 999;
+*XYZ 946994;
+$_Stream=--------------------- END ---------------------
+$_Filename=tletter.txt
+$_Path=.\
+$_Date=
+$_Time=
+$_Stream=-------------------- BEGIN --------------------
+Microsoft Windows Server for x64
+Base SAS	30DEC2024
+SAS Business Rules Manager	30DEC2024
+SAS Data Integration Server	30DEC2024
+SAS Data Management Advanced Server	30DEC2024
+SAS Data Management Server Remote Function Call for SAP	30DEC2024
+SAS Data Quality Advanced Server	30DEC2024
+SAS Enterprise BI Server	30DEC2024
+SAS Enterprise Guide	30DEC2024
+SAS Integration Technologies	30DEC2024
+SAS Metadata Bridge for Microsoft Excel	30DEC2024
+SAS Metadata Bridges for CA	30DEC2024
+SAS Metadata Bridges for Informatica	30DEC2024
+SAS Metadata Server	30DEC2024
+SAS Quality Knowledge Base	30DEC2024
+SAS Studio	30DEC2024
+SAS Visual Analytics Administration and Reporting	30DEC2024
+SAS Visual Analytics LASR Server Non-Distributed	30DEC2024
+SAS/ACCESS Interface to JDBC	30DEC2024
+SAS/ACCESS Interface to Microsoft SQL Server	30DEC2024
+SAS/ACCESS Interface to MySQL	30DEC2024
+SAS/ACCESS Interface to ODBC	30DEC2024
+SAS/ACCESS Interface to Oracle	30DEC2024
+SAS/ACCESS Interface to PC Files	30DEC2024
+SAS/ACCESS Interface to PostgreSQL	30DEC2024
+SAS/ETS	30DEC2024
+SAS/IML	30DEC2024
+SAS/STAT	30DEC2024
+$_Stream=--------------------- END ---------------------
+[_EOF_]
